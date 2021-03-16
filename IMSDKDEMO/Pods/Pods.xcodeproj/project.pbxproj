@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		37C8B4CA3E62FB44CD14CEEF054EDAC2 /* TXIMSDK_iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2EA7CD85B583385538824685F1F8DC1A /* Build configuration list for PBXAggregateTarget "TXIMSDK_iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = TXIMSDK_iOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		45D4188C481EAC8A07CD44B5CE6FAAD8 /* Pods-IMSDKDEMO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAF409291EADA5C6EE1C71FE19F36A9 /* Pods-IMSDKDEMO-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CC98D125B674BC03420EDCB479DF99E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37C8B4CA3E62FB44CD14CEEF054EDAC2;
+			remoteInfo = TXIMSDK_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F3E2E4170CECAE80C39A37D3B997A7 /* V2TIMManager+Friendship.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "V2TIMManager+Friendship.h"; path = "ImSDK.framework/Headers/V2TIMManager+Friendship.h"; sourceTree = "<group>"; };
+		19EF8FB9607C95795370EC7CAF21939C /* Pods-IMSDKDEMO-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMSDKDEMO-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A60CE84C99438828F2DA9181DF4A575 /* TIMErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMErrorCode.h; path = ImSDK.framework/Headers/TIMErrorCode.h; sourceTree = "<group>"; };
+		1C9CE0DD618A53276D66FE4075FFD107 /* libPods-IMSDKDEMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IMSDKDEMO.a"; path = "libPods-IMSDKDEMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2891079EDEA303DFDF4714F2EE350E71 /* V2TIMManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TIMManager.h; path = ImSDK.framework/Headers/V2TIMManager.h; sourceTree = "<group>"; };
+		2FF88DA8DA925D7C4493D44DCA18A4F1 /* TIMFriendshipManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMFriendshipManager.h; path = ImSDK.framework/Headers/TIMFriendshipManager.h; sourceTree = "<group>"; };
+		34D31C8E4C9857EC2A46C49F9B575AB2 /* Pods-IMSDKDEMO-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMSDKDEMO-acknowledgements.markdown"; sourceTree = "<group>"; };
+		381252FB3F8D9566BC6684558CB1EEB4 /* TIMManager+MsgExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TIMManager+MsgExt.h"; path = "ImSDK.framework/Headers/TIMManager+MsgExt.h"; sourceTree = "<group>"; };
+		3F223BAAD9D97D3BE039739FBE3604EF /* TXIMSDK_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TXIMSDK_iOS.release.xcconfig; sourceTree = "<group>"; };
+		531A4ACA0D51E188A53B1AE2B5D34EDA /* TIMMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMMessage.h; path = ImSDK.framework/Headers/TIMMessage.h; sourceTree = "<group>"; };
+		543A1DB49988D66939BF2F43C718F553 /* TIMGroupManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMGroupManager.h; path = ImSDK.framework/Headers/TIMGroupManager.h; sourceTree = "<group>"; };
+		586A61B975DC2F27614A31DFEDD8A0C1 /* V2TIMManager+Conversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "V2TIMManager+Conversation.h"; path = "ImSDK.framework/Headers/V2TIMManager+Conversation.h"; sourceTree = "<group>"; };
+		70B7824CE52299807DCB95CBF9AAFD82 /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		71D5D3ED5CCD9905D9F423851A0C1192 /* Pods-IMSDKDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMSDKDEMO.debug.xcconfig"; sourceTree = "<group>"; };
+		764E6B7F333A2236CED8F5CB087F89C6 /* V2TIMManager+APNS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "V2TIMManager+APNS.h"; path = "ImSDK.framework/Headers/V2TIMManager+APNS.h"; sourceTree = "<group>"; };
+		8563764CDDAC9859BBDA26D582DF5BB7 /* TXIMSDK_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TXIMSDK_iOS.debug.xcconfig; sourceTree = "<group>"; };
+		887B087B7774A70F6F575CAA58AEC424 /* TIMManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMManager.h; path = ImSDK.framework/Headers/TIMManager.h; sourceTree = "<group>"; };
+		9338ABA011D7E397EFB36E1F0EBF21B0 /* ImSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImSDK.h; path = ImSDK.framework/Headers/ImSDK.h; sourceTree = "<group>"; };
+		9342E96A8311532B23ACB2A1636E96FD /* Pods-IMSDKDEMO-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMSDKDEMO-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A40BCF8EBE6834FD21138D2A0006E6D5 /* TIMCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMCallback.h; path = ImSDK.framework/Headers/TIMCallback.h; sourceTree = "<group>"; };
+		BA0EF729EC839B9505D6D477ACBCBC5E /* V2TIMManager+Group.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "V2TIMManager+Group.h"; path = "ImSDK.framework/Headers/V2TIMManager+Group.h"; sourceTree = "<group>"; };
+		C0FFD4F3ACDCDDED729FBE2958BA5135 /* V2TIMManager+Message.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "V2TIMManager+Message.h"; path = "ImSDK.framework/Headers/V2TIMManager+Message.h"; sourceTree = "<group>"; };
+		CEAF409291EADA5C6EE1C71FE19F36A9 /* Pods-IMSDKDEMO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMSDKDEMO-dummy.m"; sourceTree = "<group>"; };
+		E2414C8B7D13E51671FD9802DAEA79F0 /* Pods-IMSDKDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMSDKDEMO.release.xcconfig"; sourceTree = "<group>"; };
+		EE94BCA6C783194186D9A5AE5875755A /* TIMConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMConversation.h; path = ImSDK.framework/Headers/TIMConversation.h; sourceTree = "<group>"; };
+		F2C1FCA1F1401F57B2AC538C91BEC8D9 /* TIMFriendshipDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMFriendshipDefine.h; path = ImSDK.framework/Headers/TIMFriendshipDefine.h; sourceTree = "<group>"; };
+		F3BB1F17763F3BA86C1E163480523779 /* TIMConversation+MsgExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TIMConversation+MsgExt.h"; path = "ImSDK.framework/Headers/TIMConversation+MsgExt.h"; sourceTree = "<group>"; };
+		F9AD5C66300119CA3E46802079E3A52D /* V2TIMManager+Signaling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "V2TIMManager+Signaling.h"; path = "ImSDK.framework/Headers/V2TIMManager+Signaling.h"; sourceTree = "<group>"; };
+		FE6E2CE29A4DAB0BBCF55CAE2A73E7A5 /* TIMComm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TIMComm.h; path = ImSDK.framework/Headers/TIMComm.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E27E6E44A9BB7A528E75FFA5FE8BEBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		198F2142F4235E6ECDC9DC5AE45CE288 /* Pods-IMSDKDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				34D31C8E4C9857EC2A46C49F9B575AB2 /* Pods-IMSDKDEMO-acknowledgements.markdown */,
+				19EF8FB9607C95795370EC7CAF21939C /* Pods-IMSDKDEMO-acknowledgements.plist */,
+				CEAF409291EADA5C6EE1C71FE19F36A9 /* Pods-IMSDKDEMO-dummy.m */,
+				9342E96A8311532B23ACB2A1636E96FD /* Pods-IMSDKDEMO-frameworks.sh */,
+				71D5D3ED5CCD9905D9F423851A0C1192 /* Pods-IMSDKDEMO.debug.xcconfig */,
+				E2414C8B7D13E51671FD9802DAEA79F0 /* Pods-IMSDKDEMO.release.xcconfig */,
+			);
+			name = "Pods-IMSDKDEMO";
+			path = "Target Support Files/Pods-IMSDKDEMO";
+			sourceTree = "<group>";
+		};
+		2B5A336F2D4BC8473E0057E31BACDE63 /* TXIMSDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9338ABA011D7E397EFB36E1F0EBF21B0 /* ImSDK.h */,
+				A40BCF8EBE6834FD21138D2A0006E6D5 /* TIMCallback.h */,
+				FE6E2CE29A4DAB0BBCF55CAE2A73E7A5 /* TIMComm.h */,
+				EE94BCA6C783194186D9A5AE5875755A /* TIMConversation.h */,
+				F3BB1F17763F3BA86C1E163480523779 /* TIMConversation+MsgExt.h */,
+				1A60CE84C99438828F2DA9181DF4A575 /* TIMErrorCode.h */,
+				F2C1FCA1F1401F57B2AC538C91BEC8D9 /* TIMFriendshipDefine.h */,
+				2FF88DA8DA925D7C4493D44DCA18A4F1 /* TIMFriendshipManager.h */,
+				543A1DB49988D66939BF2F43C718F553 /* TIMGroupManager.h */,
+				887B087B7774A70F6F575CAA58AEC424 /* TIMManager.h */,
+				381252FB3F8D9566BC6684558CB1EEB4 /* TIMManager+MsgExt.h */,
+				531A4ACA0D51E188A53B1AE2B5D34EDA /* TIMMessage.h */,
+				2891079EDEA303DFDF4714F2EE350E71 /* V2TIMManager.h */,
+				764E6B7F333A2236CED8F5CB087F89C6 /* V2TIMManager+APNS.h */,
+				586A61B975DC2F27614A31DFEDD8A0C1 /* V2TIMManager+Conversation.h */,
+				07F3E2E4170CECAE80C39A37D3B997A7 /* V2TIMManager+Friendship.h */,
+				BA0EF729EC839B9505D6D477ACBCBC5E /* V2TIMManager+Group.h */,
+				C0FFD4F3ACDCDDED729FBE2958BA5135 /* V2TIMManager+Message.h */,
+				F9AD5C66300119CA3E46802079E3A52D /* V2TIMManager+Signaling.h */,
+				7084A6775B702AF59493B3C7EBE6078B /* Frameworks */,
+				63BCB2AE4D2AF793035147BFC5308EE8 /* Support Files */,
+			);
+			name = TXIMSDK_iOS;
+			path = TXIMSDK_iOS;
+			sourceTree = "<group>";
+		};
+		41D31ABD87803F97002693D87F22A274 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				198F2142F4235E6ECDC9DC5AE45CE288 /* Pods-IMSDKDEMO */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		63BCB2AE4D2AF793035147BFC5308EE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8563764CDDAC9859BBDA26D582DF5BB7 /* TXIMSDK_iOS.debug.xcconfig */,
+				3F223BAAD9D97D3BE039739FBE3604EF /* TXIMSDK_iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TXIMSDK_iOS";
+			sourceTree = "<group>";
+		};
+		7084A6775B702AF59493B3C7EBE6078B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70B7824CE52299807DCB95CBF9AAFD82 /* ImSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4653A0F0730F480BD33D81328FE7A43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B5A336F2D4BC8473E0057E31BACDE63 /* TXIMSDK_iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA69A887314E554A80CBEB8F28E67214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C9CE0DD618A53276D66FE4075FFD107 /* libPods-IMSDKDEMO.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				A4653A0F0730F480BD33D81328FE7A43 /* Pods */,
+				AA69A887314E554A80CBEB8F28E67214 /* Products */,
+				41D31ABD87803F97002693D87F22A274 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE3AFDA2215339B104FFA0817FAF3DA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A38B6A0CD00B835ECE92BD1DDA9D221F /* Pods-IMSDKDEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3F12EC22DE2C6B661FD40D32BC7947 /* Build configuration list for PBXNativeTarget "Pods-IMSDKDEMO" */;
+			buildPhases = (
+				FE3AFDA2215339B104FFA0817FAF3DA6 /* Headers */,
+				F1852ED4F292E7DB6256DB2DC4E30C93 /* Sources */,
+				E27E6E44A9BB7A528E75FFA5FE8BEBF8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1D0598FD6524614271D8280D679F3B /* PBXTargetDependency */,
+			);
+			name = "Pods-IMSDKDEMO";
+			productName = "Pods-IMSDKDEMO";
+			productReference = 1C9CE0DD618A53276D66FE4075FFD107 /* libPods-IMSDKDEMO.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AA69A887314E554A80CBEB8F28E67214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38B6A0CD00B835ECE92BD1DDA9D221F /* Pods-IMSDKDEMO */,
+				37C8B4CA3E62FB44CD14CEEF054EDAC2 /* TXIMSDK_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1852ED4F292E7DB6256DB2DC4E30C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D4188C481EAC8A07CD44B5CE6FAAD8 /* Pods-IMSDKDEMO-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B1D0598FD6524614271D8280D679F3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TXIMSDK_iOS;
+			target = 37C8B4CA3E62FB44CD14CEEF054EDAC2 /* TXIMSDK_iOS */;
+			targetProxy = 3CC98D125B674BC03420EDCB479DF99E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E276770DC88B5C385AB3E744A6BB6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8563764CDDAC9859BBDA26D582DF5BB7 /* TXIMSDK_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC3C90520672DF825055557E4812C481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D5D3ED5CCD9905D9F423851A0C1192 /* Pods-IMSDKDEMO.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C176E085CA3DF899251F4B05C16AE869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F223BAAD9D97D3BE039739FBE3604EF /* TXIMSDK_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3C201EAF8E7D70A883EC633EF77C1C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2414C8B7D13E51671FD9802DAEA79F0 /* Pods-IMSDKDEMO.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EA7CD85B583385538824685F1F8DC1A /* Build configuration list for PBXAggregateTarget "TXIMSDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E276770DC88B5C385AB3E744A6BB6D3 /* Debug */,
+				C176E085CA3DF899251F4B05C16AE869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD3F12EC22DE2C6B661FD40D32BC7947 /* Build configuration list for PBXNativeTarget "Pods-IMSDKDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3C90520672DF825055557E4812C481 /* Debug */,
+				C3C201EAF8E7D70A883EC633EF77C1C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

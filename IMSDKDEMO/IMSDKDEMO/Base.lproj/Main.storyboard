@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7W-rL-s3E">
+                                <rect key="frame" x="190" y="329" width="34" height="30"/>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oti-zE-Ao2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-0b-j21">
+                                <rect key="frame" x="176" y="433" width="62" height="30"/>
+                                <state key="normal" title="消息撤回"/>
+                                <connections>
+                                    <action selector="remokeMeaage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cey-HW-NkB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-hE-lPE">
+                                <rect key="frame" x="176" y="501" width="62" height="30"/>
+                                <state key="normal" title="发送消息"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0U-dS-j3I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1We-4t-eYu">
+                                <rect key="frame" x="176" y="567" width="62" height="30"/>
+                                <state key="normal" title="拉取消息"/>
+                                <connections>
+                                    <action selector="getMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDD-b2-Mqc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JcS-hE-lPE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gO-DB-2Np"/>
+                            <constraint firstItem="iBm-0b-j21" firstAttribute="top" secondItem="C7W-rL-s3E" secondAttribute="bottom" constant="74" id="FbK-7d-vxi"/>
+                            <constraint firstItem="JcS-hE-lPE" firstAttribute="top" secondItem="iBm-0b-j21" secondAttribute="bottom" constant="38" id="Til-eW-sAd"/>
+                            <constraint firstItem="iBm-0b-j21" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cKc-ro-Jzw"/>
+                            <constraint firstItem="1We-4t-eYu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecL-gO-AOY"/>
+                            <constraint firstItem="1We-4t-eYu" firstAttribute="top" secondItem="JcS-hE-lPE" secondAttribute="bottom" constant="36" id="gDQ-25-0ef"/>
+                            <constraint firstItem="C7W-rL-s3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rAt-ai-HtY"/>
+                            <constraint firstItem="iBm-0b-j21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfn-aI-Ogi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
