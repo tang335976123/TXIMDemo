@@ -34,7 +34,7 @@
     
     [[V2TIMManager sharedInstance]addAdvancedMsgListener:self];
 
-    
+//    [V2TIMManager sharedInstance]get
 }
 
 
