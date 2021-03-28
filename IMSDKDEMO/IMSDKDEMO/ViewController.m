@@ -16,7 +16,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController ()<V2TIMAdvancedMsgListener,V2TIMSDKListener>
+@interface ViewController ()<V2TIMAdvancedMsgListener,V2TIMSDKListener,TIMMessageListener>
 
 @property (nonatomic, strong) V2TIMMessage *message;
 
@@ -34,10 +34,13 @@
     
     [[V2TIMManager sharedInstance]addAdvancedMsgListener:self];
 
-//    [V2TIMManager sharedInstance]get
+    [[TIMManager sharedInstance]addMessageListener:self];
 }
 
-
+- (void)onNewMessage:(NSArray*)msgs
+{
+    
+}
 
 /// SDK 正在连接到腾讯云服务器
 - (void)onConnecting
