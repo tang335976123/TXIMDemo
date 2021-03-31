@@ -60,6 +60,7 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
     }];
     
 发送文件：
+    
     V2TIMMessage *msg = [[V2TIMManager sharedInstance]createFileMessage:@"" fileName:@""];
     V2TIMOfflinePushInfo *info = [[V2TIMOfflinePushInfo alloc]init];
     [[V2TIMManager sharedInstance]sendMessage:msg receiver:@"" groupID:@"" priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
