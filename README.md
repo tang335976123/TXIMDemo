@@ -37,3 +37,47 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
 *            正确的做法是将 UserSig 的计算代码和加密密钥放在您的业务服务器上，然后由 App 按需向您的服务器获取实时算出的 UserSig。
 *            由于破解服务器的成本要高于破解客户端 App，所以服务器计算的方案能够更好地保护您的加密密钥。
 
+
+#### 介绍发送各种消息使用方法
+
+发送图片：
+    TIMConversation * c2c_conversation = [[TIMManager sharedInstance] getConversation:TIM_C2C receiver:@"66"];
+    
+    TIMMessage * msg = [[TIMMessage alloc] init];
+    
+    TIMImageElem * image_elem = [[TIMImageElem alloc] init];
+    
+    //放在自定义bundle中的图片
+    image_elem.path  = @"/Users/edz/TXIMDemo/IMSDKDEMO/IMSDKDEMO/Debug/22.png";
+    
+    [msg addElem:image_elem];
+    
+    [c2c_conversation sendMessage:msg succ:^(){
+        NSLog(@"SendMsg Succ");
+    }fail:^(int code, NSString * err) {
+        NSLog(@"SendMsg Failed:%d->%@", code, err);
+    }];
+    
+发送文件：
+    V2TIMMessage *msg = [[V2TIMManager sharedInstance]createFileMessage:@"" fileName:@""];
+    V2TIMOfflinePushInfo *info = [[V2TIMOfflinePushInfo alloc]init];
+   [[V2TIMManager sharedInstance]sendMessage:msg receiver:@"" groupID:@"" priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
+        
+    } succ:^{
+        
+    } fail:^(int code, NSString *desc) {
+        
+    }];
+    
+    
+     }];
+    }];
+发送群消息：
+
+    [[V2TIMManager sharedInstance]sendGroupTextMessage:@"腾讯测试" to:@"2" priority:V2TIM_PRIORITY_DEFAULT succ:^{
+        NSLog(@"群消息发送成功");
+    } fail:^(int code, NSString *desc) {
+        NSLog(@"--error-->%@",desc);
+    }];
+
+
