@@ -41,6 +41,7 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
 #### 介绍发送各种消息使用方法
 
 发送图片：
+   
     TIMConversation * c2c_conversation = [[TIMManager sharedInstance] getConversation:TIM_C2C receiver:@"66"];
     
     TIMMessage * msg = [[TIMMessage alloc] init];
@@ -61,7 +62,7 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
 发送文件：
     V2TIMMessage *msg = [[V2TIMManager sharedInstance]createFileMessage:@"" fileName:@""];
     V2TIMOfflinePushInfo *info = [[V2TIMOfflinePushInfo alloc]init];
-   [[V2TIMManager sharedInstance]sendMessage:msg receiver:@"" groupID:@"" priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
+    [[V2TIMManager sharedInstance]sendMessage:msg receiver:@"" groupID:@"" priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
         
     } succ:^{
         
