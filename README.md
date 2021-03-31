@@ -82,4 +82,62 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
         NSLog(@"--error-->%@",desc);
     }];
 
+获取指定用户资料
 
+    [[TIMFriendshipManager sharedInstance]getUsersProfile:@[@"66890909"] forceUpdate:YES succ:^(NSArray<TIMUserProfile *> *profiles) {
+        NSLog(@"--pofiles--%@",profiles);
+    } fail:^(int code, NSString *msg) {
+            
+    }];
+
+获取成员列表
+
+    [[V2TIMManager sharedInstance]getGroupMemberList:@"66666" filter:V2TIM_GROUP_MEMBER_FILTER_ALL nextSeq:30 succ:^(uint64_t nextSeq, NSArray<V2TIMGroupMemberFullInfo *> *memberList) {
+        NSLog(@"---->>%@",memberList);
+    } fail:^(int code, NSString *desc) {
+        NSLog(@"error--->%@",desc);
+    }];
+    
+ *转让群给新群主*
+  
+    [[TIMGroupManager sharedInstance]modifyGroupOwner:@"7787" user:@"55" succ:^{
+        NSLog(@"群转让转成功");
+    } fail:^(int code, NSString *msg) {
+        NSLog(@"群转让失败---%@",msg);
+    }];
+    
+退出群组
+   
+    [[V2TIMManager sharedInstance]quitGroup:@"66666" succ:^{
+        NSLog(@"退出成功");
+    } fail:^(int code, NSString *desc) {
+        NSLog(@"--code--%d----->>%@",code,desc);
+    }];
+ 
+ 发送视频文件
+ 
+    V2TIMMessage *mage = [[V2TIMManager sharedInstance]createVideoMessage:@"/Users/edz/videoDemo/TLIMDemo/TLIMDemo/Debug/ttyy.mp4" type:@"mp4" duration:44 snapshotPath:@"/Users/edz/videoDemo/TLIMDemo/TLIMDemo/Debug/22.png"];
+    V2TIMOfflinePushInfo *info = [[V2TIMOfflinePushInfo alloc]init];
+    
+    [[V2TIMManager sharedInstance]sendMessage:mage receiver:@"55" groupID:nil priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
+        NSLog(@"----%d",progress);
+        } succ:^{
+            NSLog(@"发送成功");
+        } fail:^(int code, NSString *desc) {
+            NSLog(@"--errcode--%d---erromsg--%@",code,desc);
+    }];
+    
+ 添加好友
+
+    V2TIMFriendAddApplication *addfriend = [[V2TIMFriendAddApplication alloc]init];
+    addfriend.userID = @"55";
+    addfriend.friendRemark = @"测试";
+    addfriend.addType = V2TIM_FRIEND_TYPE_BOTH;
+    
+    [[V2TIMManager sharedInstance]addFriend:addfriend succ:^(V2TIMFriendOperationResult *result) {
+        NSLog(@"ok");
+    } fail:^(int code, NSString *desc) {
+        NSLog(@"code-->>%d--->>%@",code,desc);
+    }];
+    
+ 
