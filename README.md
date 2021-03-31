@@ -155,3 +155,14 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
     } fail:^(int code, NSString *desc) {
         NSLog(@"error--->%@",desc);
     }];
+推送注意点：
+  
+    V2TIMAPNSConfig *confg = [[V2TIMAPNSConfig alloc] init];
+            confg.businessID = sdkBusiId;
+            confg.token = self.deviceToken;
+            [[V2TIMManager sharedInstance] setAPNS:confg succ:^{
+                 NSLog(@"-----> 设置 APNS 成功");
+            } fail:^(int code, NSString *msg) {
+                 NSLog(@"-----> 设置 APNS 失败");
+            }];
+            
