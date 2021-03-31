@@ -140,4 +140,18 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
         NSLog(@"code-->>%d--->>%@",code,desc);
     }];
     
- 
+添加群：
+
+    [[V2TIMManager sharedInstance]joinGroup:@"8989888" msg:@"腾讯云的" succ:^{
+        NSLog(@"进群成功");
+    } fail:^(int code, NSString *desc) {
+        NSLog(@"进群失败----- >%@",desc);
+    }];
+    
+创建群：
+    
+    [[V2TIMManager sharedInstance]createGroup:@"AVChatRoom" groupID:@"8989888" groupName:@"测试0012" succ:^(NSString *groupID) {
+        NSLog(@"grouid-->>%@",groupID);
+    } fail:^(int code, NSString *desc) {
+        NSLog(@"error--->%@",desc);
+    }];
