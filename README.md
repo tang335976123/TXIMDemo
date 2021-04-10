@@ -20,7 +20,7 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
 
 #### 本DEMO 调用的IM V2的全新接口
 
-##### 功能点有：1、登录 、获取历史消息 、消息撤回、发送消息、 发送信令消息
+##### 功能点有：1、登录 、获取历史消息 、消息撤回、发送消息、 发送信令消息、 离线功能设置（声音、推送消息标题、声音、内容展示）
 
 #### DEMO 只需要 GenerateTestUserSig 在这个文件中设置 SDKAPPID和 SECRETKEY 这两个参数就行了
 
@@ -160,9 +160,76 @@ TIMSDKDEMO is available under the MIT license. See the LICENSE file for more inf
     V2TIMAPNSConfig *confg = [[V2TIMAPNSConfig alloc] init];
             confg.businessID = sdkBusiId;
             confg.token = self.deviceToken;
-            [[V2TIMManager sharedInstance] setAPNS:confg succ:^{
+     [[V2TIMManager sharedInstance] setAPNS:confg succ:^{
                  NSLog(@"-----> 设置 APNS 成功");
-            } fail:^(int code, NSString *msg) {
-                 NSLog(@"-----> 设置 APNS 失败");
-            }];
+     } fail:^(int code, NSString *msg) {
+             NSLog(@"-----> 设置 APNS 失败");
+     }];
+            
+ 离线推送设置
+ 主要是在这个V2TIMOfflinePushInfo类中设置。
+ /////////////////////////////////////////////////////////////////////////////////
+//                         苹果 APNS 离线推送
+/////////////////////////////////////////////////////////////////////////////////
+
+// 填入 sound 字段表示接收时不会播放声音
+extern NSString * const kIOSOfflinePushNoSound;
+
+/// 自定义消息 push。
+@interface V2TIMOfflinePushInfo : NSObject
+
+/// 离线推送展示的标题。
+@property(nonatomic,strong) NSString * title;
+
+/// 离线推送展示的内容。
+@property(nonatomic,strong) NSString * desc;
+
+/// 离线推送扩展字段，
+/// iOS: 收到离线推送的一方可以在 UIApplicationDelegate -> didReceiveRemoteNotification -> userInfo 拿到这个字段，用这个字段可以做 UI 跳转逻辑
+@property(nonatomic,strong) NSString * ext;
+
+/// 是否关闭推送（默认开启推送）。
+@property(nonatomic,assign) BOOL disablePush;
+
+/// 离线推送声音设置（仅对 iOS 生效），
+/// 当 sound = kIOSOfflinePushNoSound，表示接收时不会播放声音。
+/// 如果要自定义 iOSSound，需要先把语音文件链接进 Xcode 工程，然后把语音文件名（带后缀）设置给 iOSSound。
+@property(nonatomic,strong) NSString * iOSSound;
+
+/// 离线推送忽略 badge 计数（仅对 iOS 生效），
+/// 如果设置为 YES，在 iOS 接收端，这条消息不会使 APP 的应用图标未读计数增加。
+@property(nonatomic,assign) BOOL ignoreIOSBadge;
+
+/// 离线推送设置 OPPO 手机 8.0 系统及以上的渠道 ID（仅对 Android 生效）。
+@property(nonatomic,strong) NSString *AndroidOPPOChannelID;
+
+然后设置以下方法的 offlinePushInfo 就可以了
+/**
+ *  3.1 发送高级消息（高级版本：可以指定优先级，推送信息等特性）
+ *
+ *  @param message 待发送的消息对象，需要通过对应的 createXXXMessage 接口进行创建。
+ *  @param receiver 消息接收者的 userID, 如果是发送 C2C 单聊消息，只需要指定 receiver 即可。
+ *  @param groupID 目标群组 ID，如果是发送群聊消息，只需要指定 groupID 即可。
+ *  @param priority 消息优先级，仅针对群聊消息有效。请把重要消息设置为高优先级（比如红包、礼物消息），高频且不重要的消息设置为低优先级（比如点赞消息）。
+ *  @param onlineUserOnly 是否只有在线用户才能收到，如果设置为 YES ，接收方历史消息拉取不到，常被用于实现”对方正在输入”或群组里的非重要提示等弱提示功能，该字段不支持 AVChatRoom。
+ *  @param offlinePushInfo 苹果 APNS 离线推送时携带的标题和声音。
+ *  @param progress 文件上传进度（当发送消息中包含图片、语音、视频、文件等富媒体消息时才有效）。
+ *  @return msgID 消息唯一标识
+ *
+ *  @note
+ *  - 如果需要消息离线推送，请先在 V2TIMManager+APNS.h 开启推送，推送开启后，除了自定义消息，其他消息默认都会推送。
+ *  - 如果自定义消息也需要推送，请设置 offlinePushInfo 的 desc 字段，设置成功后，推送的时候会默认展示 desc 信息。
+ *  - AVChatRoom 群聊不支持 onlineUserOnly 字段，如果是 AVChatRoom 请将该字段设置为 NO。
+ *  - 如果设置 onlineUserOnly 为 YES 时，该消息为在线消息且不会被计入未读计数。
+ */
+- (NSString *)sendMessage:(V2TIMMessage *)message
+                 receiver:(NSString *)receiver
+                  groupID:(NSString *)groupID
+                 priority:(V2TIMMessagePriority)priority
+           onlineUserOnly:(BOOL)onlineUserOnly
+          offlinePushInfo:(V2TIMOfflinePushInfo *)offlinePushInfo
+                 progress:(V2TIMProgress)progress
+                     succ:(V2TIMSucc)succ
+                     fail:(V2TIMFail)fail;
+ 
             
